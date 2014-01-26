@@ -3,7 +3,7 @@
  * Plugin Name: SO Recommended Reading
  * Plugin URI: http://so-wp.com/?p=76
  * Description:  The SO Recommended Reading plugin lets you add links to external articles that you want to recommend to your readers and places those at the bottom of your Post. The plugin is an Extension for the Meta Box plugin by Rilwis and therefore cannot function without the latter being installed too.
- * Version: 2014.01.23
+ * Version: 2014.01.26
  * Author: Piet Bos
  * Author URI: http://senlinonline.com
  * Text Domain: so-recommended-reading
@@ -46,9 +46,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 //Only do this when on the Plugins page.
 if ( ! empty ( $GLOBALS['pagenow'] ) && 'plugins.php' === $GLOBALS['pagenow'] )
-	add_action( 'admin_notices', 'so_check_admin_notices', 0 );
+	add_action( 'admin_notices', 'sorr_check_admin_notices', 0 );
 
-function so_min_wp_version() {
+function sorr_min_wp_version() {
 	global $wp_version;
 	$require_wp = '3.6';
 	$update_url = get_admin_url( null, 'update-core.php' );
@@ -62,9 +62,9 @@ function so_min_wp_version() {
 	return $errors; 
 }
 
-function so_check_admin_notices()
+function sorr_check_admin_notices()
 {
-	$errors = so_min_wp_version();
+	$errors = sorr_min_wp_version();
 
 	if ( empty ( $errors ) )
 		return;
@@ -131,11 +131,11 @@ $required_plugin = 'meta-box/meta-box.php';
 // multisite throws the error message by default, because the plugin is installed on the network site, therefore check for multisite
 if ( ! in_array( $required_plugin , $plugins ) && ! is_multisite() ) {
 
-	add_action( 'admin_notices', 'so_no_meta_box_warning' );
+	add_action( 'admin_notices', 'sorr_no_meta_box_warning' );
 
 }
 
-function so_no_meta_box_warning() {
+function sorr_no_meta_box_warning() {
     
     // display the warning message
     echo '<div class="message error"><p>';
@@ -162,14 +162,14 @@ require_once dirname( __FILE__ ) . '/inc/required-plugin.php';
  *
  * @since 2014.01.23
  */
-add_filter( 'rwmb_meta_boxes', 'so_register_meta_boxes' );
+add_filter( 'rwmb_meta_boxes', 'sorr_register_meta_boxes' );
 
 /**
  * Register meta box
  *
  * @since 2014.01.23
  */
-function so_register_meta_boxes( $meta_boxes )
+function sorr_register_meta_boxes( $meta_boxes )
 {
 
 	$prefix = 'sorr_';
