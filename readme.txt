@@ -4,7 +4,7 @@ Donate link: http://so-wp.com/donations
 Tags: recommended reading
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 2222.switch.version
+Stable tag: 2222.22.22
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
