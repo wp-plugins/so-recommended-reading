@@ -4,7 +4,7 @@ Donate link: http://so-wp.com/donations
 Tags: recommended reading
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.3.1
+Stable tag: 2222-switch-version
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,10 @@ Please open an issue here on [Github](https://github.com/senlin/so-recommended-r
 
 == Changelog ==
 
+= 2015.06.21 =
+
+* add WP Rollback plugin as required plugin to facilitate reverting to semantic versioning. Please read carefully. We have decided to revert to semantic versioning of the SO Recommended Reading plugin. Unfortunately this cannot be done automatically and we need you to manually install version 1.3.1 of the plugin. You can do that by using the WP Rollback plugin that we have included with this update. After installing the WP Rollback plugin, you can have a look at the Plugins page and will see the word Rollback under the SO Recommended Reading plugin. Click on it and Roll the version back to version 1.3.1. Once you have done that, you can uninstall the WP Rollback plugin (or keep it as a handy tool if you wish). Thank you for helping out, much appreciated indeed!
+
 = 1.3.1 =
 
 * date: 2015.06.19
@@ -130,3 +134,9 @@ Please open an issue here on [Github](https://github.com/senlin/so-recommended-r
 
 * date: 2014.01.23
 * first release
+
+== Upgrade Notice ==
+
+= 2015.06.21 =
+
+* add WP Rollback plugin as required plugin to facilitate reverting to semantic versioning. Please read carefully. We have decided to revert to semantic versioning of the SO Recommended Reading plugin. Unfortunately this cannot be done automatically and we need you to manually install version 1.3.1 of the plugin. You can do that by using the WP Rollback plugin that we have included with this update. After installing the WP Rollback plugin, you can have a look at the Plugins page and will see the word Rollback under the SO Recommended Reading plugin. Click on it and Roll the version back to version 1.3.1. Once you have done that, you can uninstall the WP Rollback plugin (or keep it as a handy tool if you wish). Thank you for helping out, much appreciated indeed!
