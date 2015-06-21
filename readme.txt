@@ -14,6 +14,8 @@ Lets you add links to external articles that you want to recommend to your reade
 
 <strong>Please read carefully.</strong> We have decided to revert to semantic versioning of the SO Recommended Reading plugin. Unfortunately this cannot be done automatically and we need you to manually install version 1.3.1 of the plugin. You can do that by using the WP Rollback plugin that we have included with the 2222.22.22 update. After installing the WP Rollback plugin, you can have a look at the Plugins page and will see the word Rollback under the SO Recommended Reading plugin. Click on it and Roll the version back to <strong>version 1.3.1</strong>. Once you have done that, you can uninstall the WP Rollback plugin (or keep it as a handy tool if you wish). Of course you should not update to this 2222.22.22 version anymore, even if you see the notice again, because then you will enter an infinite loop of updates… Apologies for any inconvenience and thank you for helping out!
 
+<strong>If you already updated to version 1.3.1, you can ignore this message and the update nag to 2222.22.22</strong>
+
 We opened a thread where you can ask questions about this on the [WP.org forums](https://wordpress.org/support/topic/revert-to-semantic-versioning)
 
 The SO Recommended Reading plugin is an Extension for the fantastic [Meta Box plugin](https://github.com/rilwis/meta-box) by [Rilwis](https://github.com/rilwis/). The purpose of the plugin is to let the user add recommendations to external content. 
