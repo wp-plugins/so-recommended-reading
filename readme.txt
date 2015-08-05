@@ -3,8 +3,8 @@ Contributors: senlin
 Donate link: http://so-wp.com/donations
 Tags: recommended reading
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.3.1
+Tested up to: 4.3
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,76 +69,58 @@ Please open an issue here on [Github](https://github.com/senlin/so-recommended-r
 
 == Changelog ==
 
-= 2222.22.22 - Switch Versioning Facilitation =
+= 1.3.2 (2015.08.05) =
 
-* <strong>Please read carefully.</strong> We have decided to revert to semantic versioning of the SO Recommended Reading plugin. Unfortunately this cannot be done automatically and we need you to manually install version 1.3.1 of the plugin. You can do that by using the WP Rollback plugin that we have included with this update. After installing the WP Rollback plugin, you can have a look at the Plugins page and will see the word Rollback under the SO Recommended Reading plugin. Click on it and Roll the version back to <strong>version 1.3.1</strong>. Once you have done that, you can uninstall the WP Rollback plugin (or keep it as a handy tool if you wish). Of course you should not update to this 2222.22.22 version anymore, even if you see the notice again, because then you will enter an infinite loop of updates… Apologies for any inconvenience and thank you for helping out!
-* date: 2015.06.21
-* add WP Rollback plugin as required plugin to facilitate reverting to semantic versioning.
+* changed header settings page to h1 (https://make.wordpress.org/plugins/2015/08/03/4-3-change-to-plugin-dashboard-pages/)
+* show 4.3 compatibility
 
-= 1.3.1 =
+= 1.3.1 (2015.06.19) =
 
-* date: 2015.06.19
 * revert to [semantic versioning](http://semver.org/)
 * modify metabox registration replace deprecated `pages` with `post_types`
 
-= 1.3.0 =
+= 1.3.0 (2015.06.18) =
 
-* date: 2015.06.18
 * added new MetaBox feature of sort_clone 
 
-= 1.2.4 =
+= 1.2.4 (2015.04.23) =
 
-* date: 2015.04.23
 * update TGM Plugin Activation class to 2.4.1 which fixes reported [XSS vulnerability](http://wptavern.com/xss-vulnerability-what-to-do-if-you-buy-or-sell-items-on-themeforest-and-codecanyon) 
 
-= 1.2.3 =
+= 1.2.3 (2015.04.11) =
 
-* date: 2015.04.11
 * fixed title setting output - thanks to [Justin](https://twitter.com/Tinpotgamer) for reporting it
 
-= 1.2.2 =
+= 1.2.2 (2015.04.09) =
 
-* date: 2015.04.09
 * changed logos
 * new banner image for WP.org Repo by [Nick Diamantidis](https://unsplash.com/nick_diama)
 
-= 1.2.1 =
+= 1.2.1 (2014.08.15) =
 
-* date: 2014.08.15
 * fix PHP warnings
 
-= 1.2.0 =
+= 1.2.0 (2014.07.29) =
 
-* date: 2014.07.29
 * add settings page to change the title output on frontend
 * add wpml-config.xml file
 * bump required version up to WP 3.8
 
-= 1.1.1 =
+= 1.1.1 (2014.03.27) =
 
-* date: 2014.03.27
 * bug fix (reported by [Rakesh Kumar](http://www.linkedin.com/in/rakeshkumarcn))
 
-= 1.1.0 =
+= 1.1.0 (2014.02.09) =
 
-* date: 2014.02.09
 * change priority from 1 to 5 to improve so_related_posts_output content filter
 * add conditional is_main_query()
 * unset foreach call
 * security fix: escape text/url/title-strings
 
-= 1.0.1 =
+= 1.0.1 (2014.01.26) =
 
-* date: 2014.01.26
 * fix function naming issue when more than one SO meta box extension has been installed
 
-= 1.0.0 =
+= 1.0.0 (2014.01.23) =
 
-* date: 2014.01.23
 * first release
-
-== Upgrade Notice ==
-
-= 2015.06.21 =
-
-* add WP Rollback plugin as required plugin to facilitate reverting to semantic versioning. Please read carefully. We have decided to revert to semantic versioning of the SO Recommended Reading plugin. Unfortunately this cannot be done automatically and we need you to manually install version 1.3.1 of the plugin. You can do that by using the WP Rollback plugin that we have included with this update. After installing the WP Rollback plugin, you can have a look at the Plugins page and will see the word Rollback under the SO Recommended Reading plugin. Click on it and Roll the version back to version 1.3.1. Once you have done that, you can uninstall the WP Rollback plugin (or keep it as a handy tool if you wish). Thank you for helping out, much appreciated indeed!
